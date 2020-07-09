@@ -6,12 +6,12 @@ public class CSpawner : MonoBehaviour
 {
     ICopyable copyObj;
 
-
-    CEnemy SpawnEnemy(CEnemy protoObject)
+    //Methode spawn objet
+    public CEnemy SpawnEnemy(CEnemy protoObject)
     {
-        protoObject=(CEnemy)copyObj.Copy();
+        copyObj = protoObject.Copy();
 
-        return protoObject;
+        return (CEnemy)protoObject;
     }
 
 
