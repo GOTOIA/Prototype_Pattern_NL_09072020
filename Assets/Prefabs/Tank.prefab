@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4202697567059641063}
   - component: {fileID: 4202697567059641064}
   - component: {fileID: 4202697567059641065}
-  - component: {fileID: 4202697567059641061}
+  - component: {fileID: -7660845184750169792}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4202697567059641061
+--- !u!114 &-7660845184750169792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

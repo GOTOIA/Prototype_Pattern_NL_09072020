@@ -15,4 +15,12 @@ public class CSpawner : MonoBehaviour
     }
 
 
+    public void type_of()
+    {
+
+        Debug.Log("Name : " + this.name);
+    }
+
+
+
 }

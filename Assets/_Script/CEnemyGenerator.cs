@@ -13,19 +13,35 @@ public class CEnemyGenerator : MonoBehaviour
     [SerializeField] CTank tankEnemy=default;
     [SerializeField] CDrone droneEnemy=default;
 
-    [SerializeField] CSpawner spawnEnemy=default;
+    CSpawner spawnEnemy=default;
 
     CEnemy enemyTank;
     CEnemy enemyDrone;
 
+
+
+    void Awake()
+    {
+
+        spawnEnemy = GetComponent<CSpawner>();
+
+    }
     // Start is called before the first frame update
     void Start()
     {
         TankLocation = GameObject.Find("TankLocation");
         DroneLocation = GameObject.Find("DroneLocation");
 
+       
+
         enemyTank = spawnEnemy.SpawnEnemy(tankEnemy);
         enemyDrone = spawnEnemy.SpawnEnemy(droneEnemy);
+
+        spawnEnemy.type_of();
+        enemyTank.type_of();
+        enemyDrone.type_of();
+
+        
 
     }
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CEnemy : MonoBehaviour,ICopyable
+public class CEnemy : MonoBehaviour, ICopyable
 {
 
     //Creation de la copie de l'objet ( copie de sa référence mémoire)
@@ -10,6 +10,13 @@ public class CEnemy : MonoBehaviour,ICopyable
     {
         return Instantiate(this);
     }
+
+    public void type_of(){
+
+        Debug.Log("Name : "+this.name);
+    }
+
+   
 
 
 }
